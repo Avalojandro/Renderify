@@ -1,0 +1,46 @@
+{
+  "name": "renderify-js",
+  "version": "1.0.3",
+  "keywords": [
+    "react",
+    "react-render",
+    "conditional-rendering",
+    "render",
+    "dynamic-rendering",
+    "jsx",
+    "tsx"
+  ],
+  "description": "Render components easily and elegantly",
+  "license": "MIT",
+  "type": "module",
+
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --sourcemap",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No tests\""
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
