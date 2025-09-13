@@ -1,6 +1,6 @@
 {
   "name": "renderify-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": [
     "react",
     "react-render",
@@ -11,6 +11,11 @@
     "tsx"
   ],
   "description": "Render components easily and elegantly",
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/Avalojandro/Renderify"
+  },
+  "homepage": "https://renderify.dev",
   "license": "MIT",
   "type": "module",
 
